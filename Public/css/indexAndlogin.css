@@ -1,0 +1,26 @@
+/*homepage*/
+
+.choose li{
+    width:19%;
+    text-align: center;
+}
+
+/*login*/
+.login{
+    width:60%;
+    position: absolute;
+    top:50%;
+    left:30%;
+}
+
+/*register*/
+.register{
+     width:50%;
+     margin:20px auto
+}
+.regis{
+    display:block;
+    width:50px;
+    height:40px;
+    margin:0 auto
+}

@@ -1,0 +1,58 @@
+body{
+	background-color : #003366;
+}
+
+/*head*/
+.main{
+    min-height:470px;
+    width:70%;
+    margin:12px auto;
+    background-color:#FFFFFF;
+}
+.logo{
+    width:40%;
+    height:100px;
+    margin:8px;
+    float:left;
+}
+.title{
+    font-family: STXingkai;
+    font-size:34px;
+    line-height:58px;
+    text-indent: 2em;
+    float:right;
+    width:50%;
+}
+/*个人中心（列）*/
+.self{
+    font-size:14px;
+    font-weight: 900;
+    /*text-align:center;*/
+    text-indent: 1em;
+}
+.welcome{
+    margin-left:10%;
+}
+.content{
+    margin-top:10px;
+}
+.function{
+    width:80%;
+    border:1px solid #dddddd;
+    margin:0 auto 10px;
+}
+
+/*个人信息模块*/
+.information,.changeInformation,.changePassword{
+    width:80%;
+    height:80%;
+    margin:20px auto;
+    line-height: 20px;
+}
+.fixInformation{
+    cursor:pointer;
+    text-decoration: underline;
+    color:#2e6da4;
+    float:right;
+
+}
