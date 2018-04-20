@@ -38,7 +38,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                    <form class="changePassword" method="POST">
+                    <form class="changePassword" method="POST" action="/tp_GeneralEducation/index.php/Home/Student/post_password/">
                         <div><label>原密码：</label><input name="old" type="password" /></div>
                         <div><label>新密码：</label><input name="new" type="password" /></div>
                         <div><label>确认密码：</label><input name="repeat" type="password" /></div>

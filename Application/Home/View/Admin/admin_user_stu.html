@@ -35,97 +35,51 @@
                     </div>
                     <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
                         <ul class="user-tab clearfix">
-                            <li style="background-color:#A89C6B;color:#FFFFFF"><a href="admin_user_tea.php">教师管理</a></li>
+                            <li style="background-color:#A89C6B;color:#FFFFFF"><a href="__URL__/index/">教师管理</a></li>
                             <li><a href="admin_user_stu.php">学生管理</a></li>
 
                         </ul>
                         
                         <div class="user-show clearfix">
-                            <?php
-                            $pagesize=10;
-                            $student_res=mysqli_query($conn,"Select count(*) from ge_student");
-                            $student_myrow   =   mysqli_fetch_array($student_res);
-                            $student_numrows=$student_myrow[0];
-                            $student_pages=intval($student_numrows/$pagesize);
-
-                            if   ($student_numrows%$pagesize)
-                                $student_pages++;
-
-                            if (isset($_GET['student_page'])){
-                                $student_page = $_GET['student_page'];
-                            }else{
-                                $student_page = 1;
-                            }
-                            if($student_page<1){
-                                $student_page = 1;
-                            }
-                            if($student_page>=$student_pages){
-                                $student_page = $student_pages;
-                            }
-                            $student_offset=$pagesize*($student_page-1);
-    //                                echo $offset;
-                            $student_res=mysqli_query($conn,"Select * from ge_student limit $student_offset,$pagesize");
-                            if   ($student_myrow   =   mysqli_fetch_array($student_res))
-                            {
-                            $i=0;
-                            ?>
-
-                            <table class="table user-table">
-                                <tr bgcolor="#6b8ba8" style="color:#FFFFFF">
-                                    <td >学号</td>
-                                    <td>姓名</td>
-                                    <td>班级</td>
-                                    <td></td>
-
+                            <table class="table">
+                              <tr>
+                                <td>学号</td>
+                                <td>姓名</td>
+                                <td>学院</td>
+                                <td>班级</td>
+                                <td></td>
+                              </tr>
+                              <foreach name='select' item='user' >
+                                <tr>
+                                    <td> {$user.number}</td>
+                                    <td> {$user.name}</td>
+                                    <td> {$user.college}</td>
+                                    <td> {$user.class}</td>
+                                    <td class="user-delete"><a href='{:U("user_delete_stu", array("id" => $user["pk_student"]))}'>删除</a></td>
                                 </tr>
-                                <?php
-                                do   {
-                                    $i++;
-                                    ?>
-                                    <tr>
-                                        <td ><?php   echo   $student_myrow['number'];?> </td>
-                                        <td><?php   echo   $student_myrow['name'];?> </td>
-                                        <td><?php   echo   $student_myrow['class'];?>  </td>
-                                        <td><a class="user-del" href="delete.php?student_id=<?php echo $student_myrow['pk_student'] ?>" >删除</a></td>
-                                    </tr>
-                                    <?php
-                                }
-                                while   ($student_myrow   =   mysqli_fetch_array($student_res));
-                                echo   "</table>"   ;
-                                }
-                                echo   "<div   align='center'>共有".$student_pages."页(".$student_page."/".$student_pages.")<br>";
-                                echo   "<form   action='admin_user_stu.php'   method='get'>";
-                                $first=1;
-                                $prev=$student_page-1;
-                                $next=$student_page+1;
-                                $last=$student_pages;
+                              </foreach>
+                            </table>
+                            <div class="pages">{$page}</div>
+                        </div>
+                        <div class="user-add">
+                            <button class="btn btn-default" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加学生</button>
+                            <div class="modal fade user-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">添加学生</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>须知：请根据模板将角色信息填入excel表格中再上传导入，点此下载模板</p>
+                                        <form class="user-add-form clearfix" action="{:U('add_stu')}" enctype="multipart/form-data" method="post">
+                                            <input type="file" name="photo" />
 
-                                echo   "<a  href='admin_user_stu.php?student_page=".$first."'>首页</a>";
-                                //echo "page is:";
-                                //echo "$page";
-                                echo   "<a href='admin_user_stu.php?student_page=".$prev."'>上一页</a>     ";
-
-
-                                echo   "<a  href='admin_user_stu.php?student_page=".$next."'>下一页</a>     ";
-                                echo   "<a  href='admin_user_stu.php?student_page=".$last."'>尾页</a>     ";
-
-
-                                echo   "</form>";
-                                echo   "</div>";
-                                ?>
-
-                            <div class="user-add clearfix" style="position: relative;">
-                                <button class="user-add-bn">添加学生</button>
-                                <div class="user-add-bl">
-                                    <form method="post">
-                                        <input type="file" name="file_stu"/>
-                                        <input type="submit" name="submit"/>
-                                    </form>
-
+                                            <input type="submit" value="导入数据">
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
-
 
                     </div>
                 </div>

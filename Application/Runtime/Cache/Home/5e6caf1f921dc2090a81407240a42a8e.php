@@ -48,7 +48,7 @@
                     <p><span>联系方式：</span><span><?php echo ($userinfo["phone"]); ?></span></p>
                 </div>
                 <div class="fixInformation">修改信息</div>
-                <form method = "POST" class="changeInformation" style="display:none">
+                <form method = "POST" class="changeInformation" style="display:none" action="/tp_GeneralEducation/index.php/Home/Student/post_info">
                     <div><label>学号：</label><label><?php echo ($userinfo["number"]); ?></label></div>
                     <div><label>姓名：</label><label><?php echo ($userinfo["name"]); ?></label></div>
                     <div><span>学院：</span><span><?php echo ($userinfo["college"]); ?></span></div>

@@ -47,7 +47,7 @@
                         <p><span>联系方式：</span><span>{$userinfo.phone}</span></p>
                     </div>
                     <div class="fixInformation">修改信息</div>
-                    <form method = "POST" class="changeInformation" style="display:none">
+                    <form method = "POST" class="changeInformation" style="display:none" action="__URL__/post_info/">
                         <div><label>教工号：</label><label>{$userinfo.number}</label></div>
                         <div><label>姓名：</label><label>{$userinfo.name}</label></div>
                         <div><label>性别：</label><input type="radio" name="sex" value="男" checked>男<input type="radio" name="sex" value="女">女</div>

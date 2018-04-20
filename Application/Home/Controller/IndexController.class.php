@@ -17,7 +17,7 @@ class IndexController extends Controller {
 
     public  function login_post()
     {
-         session_start();
+         // session_start();
          $user_name = I("user");
          $pwd = I("password");
          $student = M("student");

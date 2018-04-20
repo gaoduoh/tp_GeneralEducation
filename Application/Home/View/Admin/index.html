@@ -36,87 +36,48 @@
                     <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
                         <ul class="user-tab clearfix">
                             <li><a href="admin_user_tea.php">教师管理</a></li>
-                            <li  style="background-color:#A89C6B;color:#FFFFFF"><a href="admin_user_stu.php">学生管理</a></li>
+                            <li  style="background-color:#A89C6B;color:#FFFFFF"><a href="__URL__/admin_user_stu/">学生管理</a></li>
 
                         </ul>
                         
                         <div class="user-show clearfix">
-                            <?php
-                            $pagesize=10;
-                            $teacher_res=mysqli_query($conn,"Select count(*) from ge_teacher");
-                            $teacher_myrow =  mysqli_fetch_array($teacher_res);
-                            $teacher_numrows=$teacher_myrow[0];
-                            $teacher_pages=intval($teacher_numrows/$pagesize);
-
-                            if   ($teacher_numrows%$pagesize)
-                                $teacher_pages++;
-                            if (isset($_GET['teacher_page'])){
-                                $teacher_page = $_GET['teacher_page'];
-                            }else{
-                                $teacher_page = 1;
-                            }
-                            if($teacher_page<1){
-                                $teacher_page = 1;
-                            }
-                            if($teacher_page>=$teacher_pages){
-                                $teacher_page = $teacher_pages;
-                            }
-                            $teacher_offset=$pagesize*($teacher_page-1);
-                            $teacher_res=mysqli_query($conn,"Select * from ge_teacher limit $teacher_offset,$pagesize");
-                            if   ($teacher_myrow   =   mysqli_fetch_array($teacher_res))
-                            {
-                            $i=0;
-                            ?>
-                            <table class="table user-table">
-                                <tr bgcolor="#6b8ba8" style="color:#FFFFFF">
-                                    <td >工号</td>
-                                    <td>姓名</td>
-                                    <td></td>
-
+                           <table class="table">
+                              <tr>
+                                <td >教工号</td>
+                                <td>姓名</td>
+                                <td></td>
+                              </tr>
+                              <foreach name='select' item='user' >
+                                <tr>
+                                    <td> {$user.number}</td>
+                                    <td> {$user.name}</td>
+                                    <td class="user-delete"><a href='{:U("user_delete_tea", array("id" => $user["pk_teacher"]))}'>删除</a></td>
                                 </tr>
-                                <?php
-                                do   {
-                                    $i++;
-                                    ?>
-                                    <tr>
-                                        <td><?php   echo   $teacher_myrow['number'];?> </td>
-                                        <td><?php   echo   $teacher_myrow['name'];?> </td>
-                                        <td><a class="user-del" href="delete.php?teacher_id=<?php echo $teacher_myrow['pk_teacher'] ?>" >删除</a></td>
-                                    </tr>
-                                    <?php
-                                }
-                                while   ($teacher_myrow   =   mysqli_fetch_array($teacher_res));
-                            echo   "</table>"   ;
-                                }
-                                echo   "<div   align='center'>共有".$teacher_pages."页(".$teacher_page."/".$teacher_pages.")<br>";
-                                echo   "<form   action='admin_user_tea.php'   method='get'>";
-                                $first=1;
-                                $prev=$teacher_page-1;
-                                $next=$teacher_page+1;
-                                $last=$teacher_pages;
-
-                                echo   "<a href='admin_user_tea.php?teacher_page=".$first."'>首页</a> ";
-                                echo   "<a href='admin_user_tea.php?teacher_page=".$prev."'>上一页</a>";
-                                echo   "<a href='admin_user_tea.php?teacher_page=".$next."'>下一页</a>";
-                                echo   "<a href='admin_user_tea.php?teacher_page=".$last."'>尾页</a>";
-
-
-                                echo   "</form>";
-                                echo   "</div>";
-                                ?>
-                            
-
-                            <div class="user-add clearfix" style="position: relative;">
-                                <button class="user-add-bn">添加教师</button>
-                                <div class="user-add-bl">
-                                    
-                                </div>
-                            </div>
-                           
+                              </foreach>
+                            </table>
+                            <div class="pages">{$page}</div>
                         </div>
 
-                        
+                        <div class="user-add">
+                            <button class="btn btn-default" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加教师</button>
+                            <div class="modal fade user-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">添加教师</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>须知：请根据模板将角色信息填入excel表格中再上传导入，点此下载模板</p>
+                                        <form class="user-add-form clearfix"  action="{:U('add_tea')}" enctype="multipart/form-data" method="post">
 
+                                            <input type="file" name="photo" />
+
+                                            <input type="submit" value="导入数据">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
 
                     </div>
                 </div>
