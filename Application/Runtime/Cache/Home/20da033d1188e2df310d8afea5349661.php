@@ -39,7 +39,29 @@
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                    <p style="font-size:20px;font-weight: 900;color:#ff0000">此处实现教师上传资料</p>
+                    <div class="data-add">
+                            <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加资料</button>
+                            <div class="modal fade course-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">添加资料</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="/tp_GeneralEducation/index.php/Home/Teacher/upload" enctype="multipart/form-data" method="post" >
+                                            <input type="file" name="photo" />
+                                            <input type="submit" value="提交" >
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <ul class="dataList">
+                          <?php if(is_array($select)): foreach($select as $key=>$list): ?><li><a href="<?php echo ($list["url"]); ?>"><?php echo ($list["title"]); ?></a><a href='<?php echo U("delete_file", array("id" => $list["pk_sources"]));?>'>删除</a></li><?php endforeach; endif; ?>
+                        </ul>
+                        <div class="pages"><?php echo ($page); ?></div>
                 </div>
             </div>
         </div>

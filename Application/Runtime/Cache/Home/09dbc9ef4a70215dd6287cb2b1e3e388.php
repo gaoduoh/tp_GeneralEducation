@@ -39,7 +39,10 @@
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                    <p style="font-size:20px;font-weight: 900;color:#ff0000">此处实现学生资料下载</p>
+                   <ul class="dataList">
+                      <?php if(is_array($select)): foreach($select as $key=>$list): ?><li><a href="<?php echo ($list["url"]); ?>/<?php echo ($list["savename"]); ?>"><?php echo ($list["title"]); ?></a></li><?php endforeach; endif; ?>
+                    </ul>
+                    <div class="pages"><?php echo ($page); ?></div>
                 </div>
             </div>
         </div>

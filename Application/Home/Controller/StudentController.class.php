@@ -52,8 +52,16 @@ class StudentController extends Controller {
 
     public function student_download(){
         $this->username = getStuInfo()['name'];
-
-
+        $id = getStuInfo()['pk_student'];
+        $count =M('sources as a')->join('ge_student as b')->join('ge_teaching as c')
+                ->field("a.url url,a.savename savename,a.title title")
+                ->where("b.class=c.class and c.teacher=a.owner and b.pk_student = '$id'")->count();
+                // echo "<script>alert($id);</script>";
+        $p = getpage($count,10);
+        $list = M('sources as a')->join('ge_student as b')->join('ge_teaching as c')
+               ->field("a.url url,a.savename savename,a.title title")->where("b.class=c.class and c.teacher=a.owner and b.pk_student = '$id'")->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('select', $list); // 赋值数据集
+        $this->assign('page', $p->show()); // 赋值分页输出
         $this->display();
     }
 

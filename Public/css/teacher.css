@@ -32,3 +32,9 @@ a.prev,a.next{
 	left:28%;
 	width:45%;
 }
+.dataList{
+	margin-top:50px;
+}
+.dataList li{
+	float:left;
+}

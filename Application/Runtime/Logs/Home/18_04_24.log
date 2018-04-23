@@ -1,0 +1,204 @@
+[ 2018-04-24T00:00:17+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-04-24T00:00:18+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: pk_student F:\xampp\htdocs\tp_GeneralEducation\Application\Home\Controller\StudentController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '' ) LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-04-24T00:00:43+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-04-24T00:00:47+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/TeacherData/2018-04-23/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-04-24T00:00:55+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/TeacherData/2018-04-23/TeacherData/2018-04-23/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-04-24T00:01:43+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/TeacherData/2018-04-23/TeacherData/2018-04-23/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-04-24T00:01:45+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/TeacherData/2018-04-23/TeacherData/2018-04-23/TeacherData/2018-04-23//5addfc766e77d.ppt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-04-24T00:01:47+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/TeacherData/2018-04-23/TeacherData/2018-04-23/TeacherData/2018-04-23//TeacherData/2018-04-23//5addfc766e77d.ppt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+

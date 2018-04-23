@@ -39,7 +39,13 @@
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                    <p style="font-size:20px;font-weight: 900;color:#ff0000">此处实现学生资料下载</p>
+                   <ul class="dataList">
+                      <foreach name='select' item='list' >
+                        <li><a href="{$list.url}/{$list.savename}">{$list.title}</a></li>
+                        
+                      </foreach>
+                    </ul>
+                    <div class="pages">{$page}</div>
                 </div>
             </div>
         </div>
