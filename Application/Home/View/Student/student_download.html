@@ -39,9 +39,9 @@
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                   <ul class="dataList">
+                   <ul class="dataList clearfix">
                       <foreach name='select' item='list' >
-                        <li><a href="{$list.url}/{$list.savename}">{$list.title}</a></li>
+                        <li><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a></li>
                         
                       </foreach>
                     </ul>

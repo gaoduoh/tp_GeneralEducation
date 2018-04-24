@@ -39,8 +39,8 @@
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                   <ul class="dataList">
-                      <?php if(is_array($select)): foreach($select as $key=>$list): ?><li><a href="<?php echo ($list["url"]); ?>/<?php echo ($list["savename"]); ?>"><?php echo ($list["title"]); ?></a></li><?php endforeach; endif; ?>
+                   <ul class="dataList clearfix">
+                      <?php if(is_array($select)): foreach($select as $key=>$list): ?><li><a href='<?php echo U("down_file", array("savename" => $list["savename"]));?>'><?php echo ($list["title"]); ?></a></li><?php endforeach; endif; ?>
                     </ul>
                     <div class="pages"><?php echo ($page); ?></div>
                 </div>

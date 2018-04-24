@@ -58,7 +58,7 @@
                             </div>
                         </div>
 
-                        <ul class="dataList">
+                        <ul class="dataList clearfix">
                           <foreach name='select' item='list' >
                             <li><a href="{$list.url}">{$list.title}</a><a href='{:U("delete_file", array("id" => $list["pk_sources"]))}'>删除</a></li>
                             

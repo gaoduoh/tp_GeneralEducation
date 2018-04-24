@@ -58,7 +58,7 @@
                             </div>
                         </div>
 
-                        <ul class="dataList">
+                        <ul class="dataList clearfix">
                           <?php if(is_array($select)): foreach($select as $key=>$list): ?><li><a href="<?php echo ($list["url"]); ?>"><?php echo ($list["title"]); ?></a><a href='<?php echo U("delete_file", array("id" => $list["pk_sources"]));?>'>删除</a></li><?php endforeach; endif; ?>
                         </ul>
                         <div class="pages"><?php echo ($page); ?></div>

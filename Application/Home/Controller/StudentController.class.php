@@ -65,4 +65,10 @@ class StudentController extends Controller {
         $this->display();
     }
 
+    public function down_file(){
+        $filename = trim($_GET['savename']);
+        $name = explode('.',$filename,2);
+        downFile($name[0],$name[1]);
+    }
+
 }
