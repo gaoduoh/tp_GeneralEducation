@@ -26,15 +26,33 @@
         <p class="title">计算机通识教育<br />自主学习平台</p>
     </div>
     <ul class="nav nav-pills choose">
-        <li class="active"><a href="#">首页</a></li>
-        <li><a href="#">学校概况</a></li>
-        <li><a href="#">公告</a></li>
-        <li><a href="#">资料下载</a></li>
-        <li><a href="/tp_GeneralEducation/index.php/Home/Index/login/" target="_blank">登陆</a></li>
+        <li class="active homepage"><a href="#">首页</a></li>
+        <li class="introduce"><a href="#">学校概况</a></li>
+        <li class="annotion"><a href="#">公告</a></li>
+        <li class="download"><a href="#">资料下载</a></li>
+        <li><a href="/tp_GeneralEducation/index.php/Home/Index/login/" target="_blank">登录</a></li>
     </ul>
 
-    <div class="content">首页内容</div>
-    <div class="footer">页脚内容</div>
+    <div class="content">
+        <div class="intro col-xs-4 col-md-4 col-lg-4">
+            <h4>学院概况</h4>
+            <?php if(is_array($introList)): foreach($introList as $key=>$list): ?><div><?php echo ($list["des"]); ?></div><?php endforeach; endif; ?>
+            <div class="pages"><?php echo ($introPage); ?></div>
+        </div>
+        <div class="anno col-xs-4 col-md-4 col-lg-4">
+            <h4>公告</h4>
+            <?php if(is_array($annoList)): foreach($annoList as $key=>$list): ?><div><?php echo ($list["des"]); ?></div><?php endforeach; endif; ?>
+            <div class="pages"><?php echo ($annoPage); ?></div>
+        </div>
+        <div class="data col-xs-4 col-md-4 col-lg-4">
+            <h4>公共资源下载</h4>
+            <ul class="dataList clearfix">
+                <?php if(is_array($dataList)): foreach($dataList as $key=>$list): ?><li><a href='<?php echo U("down_file", array("savename" => $list["savename"]));?>'><?php echo ($list["title"]); ?></a></li><?php endforeach; endif; ?>
+            </ul>
+            <div class="pages"><?php echo ($dataPage); ?></div>
+        </div>
+    </div>
+    <!--<div class="footer">页脚内容</div>-->
 </div>
 
 <script>
@@ -42,6 +60,26 @@
         $(".choose li").click(function(){
             $(".choose li").removeClass("active");
             $(this).addClass("active");
+        });
+        $(".homepage").click(function(){
+            $(".intro").css('display','block');
+            $(".anno").css('display','block');
+            $(".data").css('display','block');
+        });
+        $(".introduce").click(function(){
+            $(".intro").css('display','block');
+            $(".anno").css('display','none');
+            $(".data").css('display','none');
+        });
+        $(".annotion").click(function(){
+            $(".intro").css('display','none');
+            $(".anno").css('display','block');
+            $(".data").css('display','none');
+        });
+        $(".download").click(function(){
+            $(".intro").css('display','none');
+            $(".anno").css('display','none');
+            $(".data").css('display','block');
         });
     });
 </script>

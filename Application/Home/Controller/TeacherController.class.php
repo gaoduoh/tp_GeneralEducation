@@ -117,7 +117,7 @@ class TeacherController extends Controller {
         $upload->maxSize   =     31457280000 ;// 设置附件上传大小
         $upload->exts      =     array('doc', 'docx', 'xsl', 'xslx','ppt','pptx');// 设置附件上传类型
         $upload->rootPath  =     './Public/'; // 设置附件上传根目录
-        $upload->savePath  =     'TeacherData/'; // 设置附件上传（子）目录
+        $upload->savePath  =     'Data/'; // 设置附件上传（子）目录
         $upload->autoSub = false;
         // 上传文件 
         $info   =   $upload->upload();

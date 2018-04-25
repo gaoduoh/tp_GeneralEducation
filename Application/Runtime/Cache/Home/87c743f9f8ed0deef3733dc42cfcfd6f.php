@@ -68,7 +68,7 @@
                                         <h4 class="modal-title" id="myModalLabel">添加学生</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>须知：请根据模板将角色信息填入excel表格中再上传导入，点此下载模板</p>
+                                        <p>须知：请根据模板将角色信息填入excel表格中再上传导入，<a href='<?php echo U("file_stu");?>'>点此下载模板</a></p>
                                         <form class="user-add-form clearfix" action="<?php echo U('add_stu');?>" enctype="multipart/form-data" method="post">
                                             <input type="file" name="photo" />
 

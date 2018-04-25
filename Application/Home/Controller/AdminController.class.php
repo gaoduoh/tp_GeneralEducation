@@ -127,7 +127,7 @@ class AdminController extends Controller {
     }
 
 
-    //导入教师
+    //导入学生
     public function add_stu() {
     	ini_set('memory_limit','1024M');
     	
@@ -206,6 +206,72 @@ class AdminController extends Controller {
 		$this->error("请选择上传的文件");
 
 		}
+    }
+
+    //下载导入模板
+    public function file_tea(){
+        $filename="教师导入模板.xls";
+        echo "<script>alert($filename);</script>";
+        $name = explode('.',$filename,2);
+        downFile($name[0],$name[1]);
+    }
+    public function file_stu(){
+        $filename="学生导入模板.xlsx";
+        echo "<script>alert($filename);</script>";
+        $name = explode('.',$filename,2);
+        downFile($name[0],$name[1]);
+    }
+
+    //上传资源
+    public function upload_sources(){
+        $type = I("type");
+        $file = I("load");
+        if($type=="data"){
+            $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     31457280000 ;// 设置附件上传大小
+            $upload->exts      =     array('doc', 'docx', 'xsl', 'xslx','ppt','pptx');// 设置附件上传类型
+            $upload->rootPath  =     './Public/'; // 设置附件上传根目录
+            $upload->savePath  =     'Data/'; // 设置附件上传（子）目录
+            $upload->autoSub = false;
+            // 上传文件
+            $info   =   $upload->upload();
+            if(!$info) {// 上传错误提示错误信息
+                $this->error($upload->getError());
+            }else{// 上传成功
+
+                foreach($info as $file){
+                    $upload->saveName = '';
+                    $data=array(
+                        'title'=>$file['name'],
+                        'savename'=>$file['savename'],
+                        'owner'=> '0',
+                        'url'=>$file['savepath'],
+                        'type'=>'data',
+                    );
+
+                    if(M('sources')->add($data)){
+                        $this->success('添加成功',U('admin_data'));
+                    }else {
+                        $this->error('添加失败');
+                    }
+                }
+            }
+        }else{
+            $data=array(
+//                'title'=>$file['name'],
+//                'savename'=>$file['savename'],
+                'owner'=> '0',
+//                'url'=>$file['savepath'],
+                'type'=>$type,
+                'des' =>I("des"),
+            );
+
+            if(M('sources')->add($data)){
+                $this->success('添加成功',U('admin_data'));
+            }else {
+                $this->error('添加失败');
+            }
+        }
     }
 
     //my code end

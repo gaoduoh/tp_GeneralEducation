@@ -5,8 +5,35 @@ use Think\Controller;
 class IndexController extends Controller {
 
     public function index(){
+        //学校概况
+        $m = M('sources');
+        $where = "pk_sources>0 and type='intro'";
+        $count = $m->where($where)->count();
+        $p = getpage($count,1);
+        $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('introList', $list); // 赋值数据集
+        $this->assign('introPage', $p->show()); // 赋值分页输出
 
-         $this->display();
+        //公告
+        $m = M('sources');
+        $where = "pk_sources>0 and type='anno'";
+        $count = $m->where($where)->count();
+        $p = getpage($count,1);
+        $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('annoList', $list); // 赋值数据集
+        $this->assign('annoPage', $p->show()); // 赋值分页输出
+
+        //公共资源
+        $m = M('sources');
+        $where = "pk_sources>0 and type='data' and owner='0'";
+        $count = $m->where($where)->count();
+        $p = getpage($count,1);
+        $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('dataList', $list); // 赋值数据集
+        $this->assign('dataPage', $p->show()); // 赋值分页输出
+
+
+        $this->display();
       }
  
 
@@ -47,6 +74,12 @@ class IndexController extends Controller {
     public function loginout(){
         session(null);
         $this->success('退出成功！跳转中...',U('Index/index'));
+    }
+
+    public function down_file(){
+        $filename = trim($_GET['savename']);
+        $name = explode('.',$filename,2);
+        downFile($name[0],$name[1]);
     }
 
 }

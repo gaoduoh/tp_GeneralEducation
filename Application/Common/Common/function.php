@@ -41,7 +41,7 @@
         echo "<script>alert('$file_name');</script>";
         //用以解决中文不能显示出来的问题
         $file_name=iconv("utf-8","gb2312",$file_name);
-        $file_sub_path="./Public/TeacherData/";
+        $file_sub_path="./Public/Data/";
         $file_path=$file_sub_path.$file_name;
         echo "<script>alert('$file_path');</script>";
         //首先要判断给定的文件存在与否
