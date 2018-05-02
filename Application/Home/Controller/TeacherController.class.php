@@ -133,6 +133,7 @@ class TeacherController extends Controller {
                     'owner'=>$teacher_id,
                     'url'=>$file['savepath'],   
                     'type'=>'data', 
+                    'course'=>I('addData'),
                 );
         
                 if(M('sources')->add($data)){

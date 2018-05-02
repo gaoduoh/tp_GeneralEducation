@@ -222,6 +222,19 @@ class AdminController extends Controller {
         downFile($name[0],$name[1]);
     }
 
+    //资源页
+    public function admin_data(){
+        $count =M('sources')
+                ->where("owner = '0'")->count();
+        $p = getpage($count,10);
+        $list = M('sources')
+                ->field(true)->where("owner = '0'")->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('select', $list); // 赋值数据集
+        $this->assign('page', $p->show()); // 赋值分页输出
+        $this->display();
+    }
+
+
     //上传资源
     public function upload_sources(){
         $type = I("type");
@@ -271,6 +284,16 @@ class AdminController extends Controller {
             }else {
                 $this->error('添加失败');
             }
+        }
+    }
+
+    //删除资源
+    public function delete_file(){
+        $id=I("id");
+        if(M('sources')->delete($id)){
+            $this->success('删除成功',U('teacher_upload'));
+        }else {
+            $this->error('删除失败,请重试。。。');
         }
     }
 
