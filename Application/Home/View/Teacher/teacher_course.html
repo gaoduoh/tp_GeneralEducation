@@ -46,7 +46,7 @@
                             <option value="互联网+">互联网+</option>
                             <option value="信息技术应用">信息技术应用</option>
                         </select>
-                        <input type="submit" name="submit" value="查询" />
+                        <input type="submit" name="submit" class="search" value="查询" />
                     </form>
                     <div class="course-add">
                             <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加课程</button>
@@ -67,6 +67,7 @@
                                             <br />
                                             <label>输入添加班级：</label>
                                             <input type="text" name="addClass"/>
+                                            <label>例：机械工程1班</label>
                                             <br />
                                             <input type="submit" name="addsubmit" value="添加" />
                                         </form>

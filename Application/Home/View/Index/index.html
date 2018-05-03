@@ -36,28 +36,26 @@ include('conn.php');
     </ul>
 
     <div class="content">
-        <div class="intro col-xs-4 col-md-4 col-lg-4">
+        <div class="intro col-xs-6 col-md-6 col-lg-6">
             <h4>学院概况</h4>
-            <foreach name='introList' item='list' >
-                <div>{$list.des}</div>
-            </foreach>
-            <div class="pages">{$introPage}</div>
+            <div>
+                {$introRs.des}
+            </div>
         </div>
-        <div class="anno col-xs-4 col-md-4 col-lg-4">
+        <div class="anno col-xs-6 col-md-6 col-lg-6">
             <h4>公告</h4>
-            <foreach name='annoList' item='list' >
-                <div>{$list.des}</div>
-            </foreach>
-            <div class="pages">{$annoPage}</div>
+            <div>
+                {$annoRs.des}
+            </div>
         </div>
-        <div class="data col-xs-4 col-md-4 col-lg-4">
+        <div class="data col-xs-6 col-md-6 col-lg-6">
             <h4>公共资源下载</h4>
             <ul class="dataList clearfix">
                 <foreach name='dataList' item='list' >
                     <li><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a></li>
                 </foreach>
             </ul>
-            <div class="pages">{$dataPage}</div>
+            <div class="datapages">{$dataPage}</div>
         </div>
     </div>
     <!--<div class="footer">页脚内容</div>-->

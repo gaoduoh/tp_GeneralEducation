@@ -6,28 +6,24 @@ class IndexController extends Controller {
 
     public function index(){
         //学校概况
-        $m = M('sources');
-        $where = "pk_sources>0 and type='intro'";
-        $count = $m->where($where)->count();
-        $p = getpage($count,1);
-        $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
-        $this->assign('introList', $list); // 赋值数据集
-        $this->assign('introPage', $p->show()); // 赋值分页输出
+        $db = M('sources'); //表名
+        $intro = array(  //条件数组
+            'type' => 'intro',
+        );
+        $this->introRs = $db->where($intro)->order('ts desc')->find(); //查询， 用find()只能查出一条数据，select()多条
+        // $this->assign('datalist',$rs); //模板赋值
 
         //公告
-        $m = M('sources');
-        $where = "pk_sources>0 and type='anno'";
-        $count = $m->where($where)->count();
-        $p = getpage($count,1);
-        $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
-        $this->assign('annoList', $list); // 赋值数据集
-        $this->assign('annoPage', $p->show()); // 赋值分页输出
+        $anno = array(  //条件数组
+            'type' => 'anno',
+        );
+        $this->annoRs = $db->where($anno)->order('ts desc')->find();
 
         //公共资源
         $m = M('sources');
         $where = "pk_sources>0 and type='data' and owner='0'";
         $count = $m->where($where)->count();
-        $p = getpage($count,1);
+        $p = datapage($count,10);
         $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
         $this->assign('dataList', $list); // 赋值数据集
         $this->assign('dataPage', $p->show()); // 赋值分页输出

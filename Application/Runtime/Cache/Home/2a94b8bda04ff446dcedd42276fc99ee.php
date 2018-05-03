@@ -34,22 +34,24 @@
     </ul>
 
     <div class="content">
-        <div class="intro col-xs-4 col-md-4 col-lg-4">
+        <div class="intro col-xs-6 col-md-6 col-lg-6">
             <h4>学院概况</h4>
-            <?php if(is_array($introList)): foreach($introList as $key=>$list): ?><div><?php echo ($list["des"]); ?></div><?php endforeach; endif; ?>
-            <div class="pages"><?php echo ($introPage); ?></div>
+            <div>
+                <?php echo ($introRs["des"]); ?>
+            </div>
         </div>
-        <div class="anno col-xs-4 col-md-4 col-lg-4">
+        <div class="anno col-xs-6 col-md-6 col-lg-6">
             <h4>公告</h4>
-            <?php if(is_array($annoList)): foreach($annoList as $key=>$list): ?><div><?php echo ($list["des"]); ?></div><?php endforeach; endif; ?>
-            <div class="pages"><?php echo ($annoPage); ?></div>
+            <div>
+                <?php echo ($annoRs["des"]); ?>
+            </div>
         </div>
-        <div class="data col-xs-4 col-md-4 col-lg-4">
+        <div class="data col-xs-6 col-md-6 col-lg-6">
             <h4>公共资源下载</h4>
             <ul class="dataList clearfix">
                 <?php if(is_array($dataList)): foreach($dataList as $key=>$list): ?><li><a href='<?php echo U("down_file", array("savename" => $list["savename"]));?>'><?php echo ($list["title"]); ?></a></li><?php endforeach; endif; ?>
             </ul>
-            <div class="pages"><?php echo ($dataPage); ?></div>
+            <div class="datapages"><?php echo ($dataPage); ?></div>
         </div>
     </div>
     <!--<div class="footer">页脚内容</div>-->
