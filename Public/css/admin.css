@@ -49,16 +49,27 @@ a.prev,a.next{
 .user-delete{
 	cursor:pointer;
 }
-.user-add-modal{
-	top:25%;
+.user-add-modal,.data-add-modal{
+	top:20%;
 	left:28%;
 	width:45%;
 }
-.user-add-form{
+.user-add-form,.data-add-form{
 	width:50%;
 	margin:15px;
 }
-input:nth-child(2){
-	margin-top:15px;
-	float:right;
+/*input:nth-child(2){*/
+	/*margin-top:15px;*/
+	/*float:right;*/
+/*}*/
+
+.intro-title{
+	font-size:26px;
+	font-weight:bold;
+	line-height:30px;
+}
+.intro-content{
+	font-size:18px;
+	line-height:40px;
+	text-indent:2em;
 }

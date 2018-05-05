@@ -239,7 +239,7 @@ class AdminController extends Controller {
     public function upload_sources(){
         $type = I("type");
         $file = I("load");
-        if($type=="data"){
+        if($type=="公共资源"){
             $upload = new \Think\Upload();// 实例化上传类
             $upload->maxSize   =     31457280000 ;// 设置附件上传大小
             $upload->exts      =     array('doc', 'docx', 'xsl', 'xslx','ppt','pptx');// 设置附件上传类型
@@ -259,7 +259,7 @@ class AdminController extends Controller {
                         'savename'=>$file['savename'],
                         'owner'=> '0',
                         'url'=>$file['savepath'],
-                        'type'=>'data',
+                        'type'=>'公共资源',
                     );
 
                     if(M('sources')->add($data)){
@@ -277,6 +277,7 @@ class AdminController extends Controller {
 //                'url'=>$file['savepath'],
                 'type'=>$type,
                 'des' =>I("des"),
+                'title' =>I('title'),
             );
 
             if(M('sources')->add($data)){

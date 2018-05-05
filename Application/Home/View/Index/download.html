@@ -28,32 +28,21 @@ include('conn.php');
         <p class="title">计算机通识教育<br />自主学习平台</p>
     </div>
     <ul class="nav nav-pills choose" style="background-color: #dff0d8">
-        <li class="active homepage"><a href="__URL__index/" target="_self">首页</a></li>
+        <li class="homepage"><a href="__URL__/index/" target="_self">首页</a></li>
         <li class="annotion"><a href="__URL__/anno/" target="_self">公告</a></li>
-        <li class="download"><a href="__URL__/download/" target="_self">资料下载</a></li>
+        <li class="active download"><a href="__URL__/download/" target="_self">资料下载</a></li>
         <li><a href="__URL__/login/" target="_blank">登录</a></li>
     </ul>
 
     <div class="content">
-        <div class="intro col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
-            <p class="intro-title">{$introRs.title}</p>
-            <div class="intro-content">
-                {$introRs.des}
-            </div>
-        </div>
-        <div class="anno col-xs-6 col-md-6 col-lg-6">
-            <p class="anno-title">公告</p>
-            <div class="anno-content">
-                {$annoRs.title}
-            </div>
-        </div>
-        <div class="data col-xs-6 col-md-6 col-lg-6">
-            <p class="data-title">资料下载</p>
+        <div class="col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+            <h4 class="data-title">资料下载</h4>
             <ul class="dataList clearfix">
                 <foreach name='dataList' item='list' >
-                    <li title="{$list.title}"><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a><span>{$list.ts}</span></li>
+                    <li title="{$list.title}"><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a><span style="float:right">{$list.ts}</span></li>
                 </foreach>
             </ul>
+            <div class="pages">{$page}</div>
         </div>
     </div>
     <!--<div class="footer">页脚内容</div>-->

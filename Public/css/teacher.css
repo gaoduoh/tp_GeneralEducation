@@ -6,22 +6,7 @@ tr:first-child{
 	font-size:14px;
 	font-weight:800;
 }
-.pages{
-	width:80%;
-	margin:0 auto;
-	line-hright:30px;
-}
-span.current,a.num{
-	width:30px;
-	height:30px;
-	display:inline-block;
-	padding:3px;
-	text-align:center;
 
-}
-a.prev,a.next{
-	width:45px;
-}
 .search-form{
 	margin:5px;
 	width:60%;
