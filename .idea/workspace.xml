@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07787c6c-e0e5-40fb-b776-2b520bb731da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Index/anno_content.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/StudentController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/StudentController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/TeacherController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/TeacherController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Admin/admin_data.html" afterPath="$PROJECT_DIR$/Application/Home/View/Admin/admin_data.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Admin/admin_user_stu.html" afterPath="$PROJECT_DIR$/Application/Home/View/Admin/admin_user_stu.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Admin/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Admin/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Index/anno.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/anno.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Index/download.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/download.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Index/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Student/student_password.html" afterPath="$PROJECT_DIR$/Application/Home/View/Student/student_password.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Teacher/teacher_password.html" afterPath="$PROJECT_DIR$/Application/Home/View/Teacher/teacher_password.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Teacher/teacher_upload.html" afterPath="$PROJECT_DIR$/Application/Home/View/Teacher/teacher_upload.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/09dbc9ef4a70215dd6287cb2b1e3e388.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1f16749b41095dca64108ffa106c0a93.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/20da033d1188e2df310d8afea5349661.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2f776ce711082c7ddb105e1aedca79e2.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/337ba48d10bf25cf0feb11594d332687.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/34db4e7ca6dcceb2d6b9cfd3e75a22de.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/390087d92dd57ad6e8a1fe8c7898c39f.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5e6caf1f921dc2090a81407240a42a8e.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/77fe5bfd50cc3dce8cd1cd54c82a0819.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/8527af4634ff600ac7a24ed83bc36de6.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/87c743f9f8ed0deef3733dc42cfcfd6f.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/89aaacb4d087ab79c380bb46e7a9cbd7.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/9259d6023ab12c3f54ec2e2209a07a5e.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/974388801dec19007a1d68cdba5252d1.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/c506a66e5fd5c20a850e05056283aa1e.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/cb0f90efd44d6288fe31b280567fc839.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ccea6a400660ce54d68cab67b9f68781.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/d7b8a508afe44bd2f5d16a078f3b6355.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/d911acaf1b44bf773759b6bbf0d9e81b.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_12.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_13.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_14.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_15.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_16.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_18.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_19.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_20.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_23.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_24.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_25.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_26.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_04_27.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_05_02.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_05_03.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Public/css/common.css" afterPath="$PROJECT_DIR$/Public/css/common.css" />
-      <change beforePath="$PROJECT_DIR$/Public/css/indexAndlogin.css" afterPath="$PROJECT_DIR$/Public/css/indexAndlogin.css" />
-      <change beforePath="$PROJECT_DIR$/Public/css/teacher.css" afterPath="$PROJECT_DIR$/Public/css/teacher.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -392,7 +341,7 @@
       <updated>1524528899002</updated>
       <workItem from="1524528906065" duration="7566000" />
       <workItem from="1524615568542" duration="12061000" />
-      <workItem from="1525504408253" duration="16171000" />
+      <workItem from="1525504408253" duration="16208000" />
     </task>
     <task id="LOCAL-00001" summary="download">
       <created>1524587269525</created>
@@ -415,15 +364,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525510769663</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="homepage and ui">
+      <created>1525540797046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1525540797046</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35798000" />
+    <option name="totallyTimeSpent" value="35835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18986385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -481,7 +436,8 @@
     <MESSAGE value="download" />
     <MESSAGE value="common resources" />
     <MESSAGE value="homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="homepage" />
+    <MESSAGE value="homepage and ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage and ui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

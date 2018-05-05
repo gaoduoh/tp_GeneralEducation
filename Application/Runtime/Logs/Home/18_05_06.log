@@ -1,0 +1,2786 @@
+[ 2018-05-06T00:15:45+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002364s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '26' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001952s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:15:48+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.1020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '26' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:15:55+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:15:56+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [8] Undefined variable: content F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 52 行.
+NOTIC: [8] Undefined variable: content F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:16:04+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '25' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:16:09+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.1015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '26' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:20:16+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:20:17+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno_content/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0598s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id F:\xampp\htdocs\tp_GeneralEducation\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:20:31+08:00 ] ::1 /tp_GeneralEducation/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003220s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:20:38+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:20:41+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno_content/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id F:\xampp\htdocs\tp_GeneralEducation\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:31:43+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:31:54+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno_content/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id F:\xampp\htdocs\tp_GeneralEducation\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:35:32+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:35:32+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002707s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:35:34+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno_content/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '25' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:37:22+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno_content/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '25' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:38:14+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:38:17+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno_content/id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE ( pk_sources = '26' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\be263d4522395b8b39a0a00a0dbfba3b.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:38:19+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.1170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:38:24+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0663s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:44:36+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001555s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:47:55+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001907s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:47:58+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0602s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:00+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:02+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.1236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\6b1b5ceff111208f479bf3472ab76c49.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\6b1b5ceff111208f479bf3472ab76c49.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\6b1b5ceff111208f479bf3472ab76c49.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:04+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:35+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:54+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/anno/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公告' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\18ac7ea44c965b1c9df360f0e5757e16.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:56+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\6b1b5ceff111208f479bf3472ab76c49.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\6b1b5ceff111208f479bf3472ab76c49.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\6b1b5ceff111208f479bf3472ab76c49.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:57+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001650s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:48:58+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/common/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:49:08+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login_post/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `ge_student` WHERE ( number='admin' and password='hqu' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0291s ]
+SQL: SELECT * FROM `ge_teacher` WHERE ( number='admin' and password='hqu' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ge_admin` [ RunTime:0.1769s ]
+SQL: SELECT * FROM `ge_admin` WHERE ( name='admin' and password='hqu' )  [ RunTime:0.0006s ]
+
+[ 2018-05-06T00:49:08+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_teacher` WHERE ( pk_teacher>0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_teacher`,`number`,`name`,`password`,`sex`,`email`,`phone`,`dr`,`ts` FROM `ge_teacher` WHERE ( pk_teacher>0 ) ORDER BY pk_teacher LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001481s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:50:57+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_teacher` WHERE ( pk_teacher>0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_teacher`,`number`,`name`,`password`,`sex`,`email`,`phone`,`dr`,`ts` FROM `ge_teacher` WHERE ( pk_teacher>0 ) ORDER BY pk_teacher LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002102s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:51:29+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_teacher` WHERE ( pk_teacher>0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_teacher`,`number`,`name`,`password`,`sex`,`email`,`phone`,`dr`,`ts` FROM `ge_teacher` WHERE ( pk_teacher>0 ) ORDER BY pk_teacher LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001098s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:51:30+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_user_stu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_student` WHERE ( pk_student>0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `pk_student`,`number`,`name`,`password`,`sex`,`college`,`class`,`email`,`phone`,`dr`,`ts` FROM `ge_student` WHERE ( pk_student>0 ) ORDER BY pk_student LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:51:36+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:57:41+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002083s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:57:53+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0723s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_teacher` WHERE ( pk_teacher>0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_teacher`,`number`,`name`,`password`,`sex`,`email`,`phone`,`dr`,`ts` FROM `ge_teacher` WHERE ( pk_teacher>0 ) ORDER BY pk_teacher LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T00:57:55+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:01+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/loginout/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001605s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:02+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:04+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002155s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:04+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/common/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002697s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:10+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login_post/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `ge_student` WHERE ( number='251027' and password='251027' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0403s ]
+SQL: SELECT * FROM `ge_teacher` WHERE ( number='251027' and password='251027' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ge_admin` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `ge_admin` WHERE ( name='251027' and password='251027' )  [ RunTime:0.0003s ]
+
+[ 2018-05-06T01:07:10+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:12+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\390087d92dd57ad6e8a1fe8c7898c39f.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:14+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_course/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_teaching` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_teaching as a INNER JOIN ge_student as b INNER JOIN ge_course as c  WHERE ( a.course = c.pk_course and a.teacher = '5' and a.class=b.class ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT b.number number,b.name name,b.class class,c.name course FROM ge_teaching as a INNER JOIN ge_student as b INNER JOIN ge_course as c  WHERE ( a.course = c.pk_course and a.teacher = '5' and a.class=b.class ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\cb0f90efd44d6288fe31b280567fc839.php 第 45 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\cb0f90efd44d6288fe31b280567fc839.php 第 46 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\cb0f90efd44d6288fe31b280567fc839.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:20+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_homework/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\8527af4634ff600ac7a24ed83bc36de6.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:07:21+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_upload/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:08:23+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\xampp\htdocs\tp_GeneralEducation\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0173s ]
+SQL: INSERT INTO `ge_sources` (`title`,`savename`,`owner`,`url`,`type`,`course`) VALUES ('大学信息技术基础（第4版）第1章 信息、信息技术与计算科学.ppt','5aede507b53e5.ppt','5','Data/','data','3') [ RunTime:0.0661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:08:24+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:08:49+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\xampp\htdocs\tp_GeneralEducation\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0106s ]
+SQL: INSERT INTO `ge_sources` (`title`,`savename`,`owner`,`url`,`type`,`course`) VALUES ('大学信息技术基础（第4版）第9章 网络空间与信息安全.ppt','5aede52183f00.ppt','5','Data/','data','3') [ RunTime:0.0808s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001391s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:08:50+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:10:17+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002669s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001918s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:13:03+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0117s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:18+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:42+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_discuss/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\337ba48d10bf25cf0feb11594d332687.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:43+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\34db4e7ca6dcceb2d6b9cfd3e75a22de.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:44+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_upload/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '5' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001912s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:45+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_homework/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\8527af4634ff600ac7a24ed83bc36de6.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:46+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_course/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_teaching` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_teaching as a INNER JOIN ge_student as b INNER JOIN ge_course as c  WHERE ( a.course = c.pk_course and a.teacher = '5' and a.class=b.class ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT b.number number,b.name name,b.class class,c.name course FROM ge_teaching as a INNER JOIN ge_student as b INNER JOIN ge_course as c  WHERE ( a.course = c.pk_course and a.teacher = '5' and a.class=b.class ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\cb0f90efd44d6288fe31b280567fc839.php 第 45 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\cb0f90efd44d6288fe31b280567fc839.php 第 46 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\cb0f90efd44d6288fe31b280567fc839.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001950s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:47+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/teacher_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\390087d92dd57ad6e8a1fe8c7898c39f.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:48+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Teacher/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `ge_teacher` WHERE `pk_teacher` = 5 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:54+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/loginout/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:56+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:59+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:14:59+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/common/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002165s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:04+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login_post/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002445s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0627s ]
+SQL: SELECT * FROM `ge_student` WHERE ( number='1611112017' and password='888888' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0454s ]
+SQL: SELECT * FROM `ge_teacher` WHERE ( number='1611112017' and password='888888' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ge_admin` [ RunTime:0.0641s ]
+SQL: SELECT * FROM `ge_admin` WHERE ( name='1611112017' and password='888888' )  [ RunTime:0.0004s ]
+
+[ 2018-05-06T01:15:05+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.1124s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002011s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:08+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:14+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_homework/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\d911acaf1b44bf773759b6bbf0d9e81b.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:16+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:18+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_discuss/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\d7b8a508afe44bd2f5d16a078f3b6355.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:19+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:20+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:21+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_homework/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\d911acaf1b44bf773759b6bbf0d9e81b.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:23+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:15:25+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:17:48+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: userinfo F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:17:50+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: userinfo F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:13+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: userinfo F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:14+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: userinfo F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:19+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:19+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: userinfo F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\974388801dec19007a1d68cdba5252d1.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:21+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.2203s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:41+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0625s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:43+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:18:44+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:19:00+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_download/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT a.url url,a.savename savename,a.title title FROM ge_sources as a INNER JOIN ge_student as b INNER JOIN ge_teaching as c  WHERE ( b.class=c.class and c.teacher=a.owner and b.pk_student = '1' and c.course = a.course ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:19:16+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_discuss/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\d7b8a508afe44bd2f5d16a078f3b6355.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:19:17+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/student_test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: username F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\77fe5bfd50cc3dce8cd1cd54c82a0819.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:19:19+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Student/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `ge_student` WHERE `pk_student` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:23:16+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/loginout/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:23:17+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '平台概况' ORDER BY ts desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ge_sources` WHERE `type` = '公告' ORDER BY ts desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( pk_sources>0 and type='公共资源' and owner='0' ) ORDER BY pk_sources LIMIT 0,2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000897s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(conn.php): failed to open stream: No such file or directory F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+NOTIC: [2] include(): Failed opening 'conn.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001890s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:23:18+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:23:18+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login/common/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:23:23+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Index/login_post/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `ge_student` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `ge_student` WHERE ( number='admin' and password='hqu' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0456s ]
+SQL: SELECT * FROM `ge_teacher` WHERE ( number='admin' and password='hqu' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ge_admin` [ RunTime:0.0438s ]
+SQL: SELECT * FROM `ge_admin` WHERE ( name='admin' and password='hqu' )  [ RunTime:0.0003s ]
+
+[ 2018-05-06T01:23:23+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `ge_teacher` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_teacher` WHERE ( pk_teacher>0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_teacher`,`number`,`name`,`password`,`sex`,`email`,`phone`,`dr`,`ts` FROM `ge_teacher` WHERE ( pk_teacher>0 ) ORDER BY pk_teacher LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:23:52+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002616s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:27:59+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001926s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:28:01+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '公共资源' ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''公共资源 ) LIMIT 0,10' at line 1
+
+[ 2018-05-06T01:28:19+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '公告' ) LIMIT 1   [ RunTime:0.0005s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''公告 ) LIMIT 0,10' at line 1
+
+[ 2018-05-06T01:28:24+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '平台概况' ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''平台概况 ) LIMIT 0,10' at line 1
+
+[ 2018-05-06T01:29:02+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:29:03+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '公共资源' ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''公共资源 ) LIMIT 0,10' at line 1
+
+[ 2018-05-06T01:31:09+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( type = '公共资源' ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''公共资源 ) LIMIT 0,10' at line 1
+
+[ 2018-05-06T01:33:34+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001872s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:33:35+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:33:39+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0928s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:34:48+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0578s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '公告' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' and type = '公告' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:34:52+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '公告' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' and type = '公告' ) LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 40 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 41 行.
+NOTIC: [8] Undefined variable: selected F:\xampp\htdocs\tp_GeneralEducation\Application\Runtime\Cache\Home\1f16749b41095dca64108ffa106c0a93.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:35:19+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '公共资源' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' and type = '公共资源' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001703s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+
+[ 2018-05-06T01:35:23+08:00 ] ::1 /tp_GeneralEducation/index.php/Home/Admin/admin_data/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `ge_sources` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ge_sources` WHERE ( owner = '0' and type = '平台概况' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pk_sources`,`title`,`savename`,`course`,`owner`,`url`,`type`,`des`,`dr`,`ts` FROM `ge_sources` WHERE ( owner = '0' and type = '平台概况' ) LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\xampp\htdocs\tp_GeneralEducation\index.php 第 28 行.
+

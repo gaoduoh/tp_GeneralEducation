@@ -211,28 +211,42 @@ class AdminController extends Controller {
     //下载导入模板
     public function file_tea(){
         $filename="教师导入模板.xls";
-        echo "<script>alert($filename);</script>";
+        // echo "<script>alert($filename);</script>";
         $name = explode('.',$filename,2);
         downFile($name[0],$name[1]);
     }
     public function file_stu(){
         $filename="学生导入模板.xlsx";
-        echo "<script>alert($filename);</script>";
+        // echo "<script>alert($filename);</script>";
         $name = explode('.',$filename,2);
         downFile($name[0],$name[1]);
     }
 
     //资源页
     public function admin_data(){
-        $count =M('sources')
+        if(!IS_POST){
+            $count =M('sources')
                 ->where("owner = '0'")->count();
-        $p = getpage($count,10);
-        $list = M('sources')
-                ->field(true)->where("owner = '0'")->limit($p->firstRow, $p->listRows)->select();
-        $this->assign('select', $list); // 赋值数据集
-        $this->assign('page', $p->show()); // 赋值分页输出
-        $this->display();
+            $p = getpage($count,10);
+            $list = M('sources')
+                    ->field(true)->where("owner = '0'")->limit($p->firstRow, $p->listRows)->select();
+            $this->assign('select', $list); // 赋值数据集
+            $this->assign('page', $p->show()); // 赋值分页输出
+            $this->display();
+        }else{
+            $data = I('data');
+            $count =M('sources')
+                ->where("owner = '0' and type = '$data'")->count();
+            $p = getpage($count,10);
+            $list = M('sources')
+                    ->field(true)->where("owner = '0' and type = '$data'")->limit($p->firstRow, $p->listRows)->select();
+            $this->assign('select', $list); // 赋值数据集
+            $this->assign('page', $p->show()); // 赋值分页输出
+            $this->assign('selected',$data);
+            $this->display();
+        }
     }
+        
 
 
     //上传资源

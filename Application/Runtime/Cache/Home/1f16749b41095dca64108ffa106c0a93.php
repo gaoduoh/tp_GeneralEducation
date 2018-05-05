@@ -34,6 +34,15 @@
                         </ul>
                     </div>
                     <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
+                        <form class="search-form" name="search" method="post" action="/tp_GeneralEducation/index.php/Home/Admin/admin_data/">
+                        <label>资料查询：</label>
+                        <select name="data">
+                            <option value="公共资源" <?php if(($selected) == "公共资源"): ?>selected<?php endif; ?>>公共资源</option>
+                            <option value="公告" <?php if(($selected) == "公告"): ?>selected<?php endif; ?>>公告</option>
+                            <option value="平台概况" <?php if(($selected) == "平台概况"): ?>selected<?php endif; ?>>平台概况</option>
+                        </select>
+                        <input type="submit" name="submit" class="search" value="查询" />
+                    </form>
                         <div class="data-add">
                             <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加资料</button>
                             <div class="modal fade data-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
