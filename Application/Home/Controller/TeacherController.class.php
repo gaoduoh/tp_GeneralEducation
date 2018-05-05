@@ -12,7 +12,7 @@ class TeacherController extends Controller {
 
 
     //myself code
-    public function teacher_passwod(){
+    public function teacher_password(){
         $this->userinfo = getTeaInfo();
         $this->display();
     }

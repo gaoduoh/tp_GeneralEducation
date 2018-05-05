@@ -87,6 +87,21 @@ class IndexController extends Controller {
     }
 
     public function anno(){
+            $m = M('sources');
+            $where = "pk_sources>0 and type='公告' and owner='0'";
+            $count = $m->where($where)->count();
+            $p = getpage($count,10);
+            $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
+            $this->assign('dataList', $list); // 赋值数据集
+            $this->assign('page', $p->show()); // 赋值分页输出
+            $this->display();
+
+
+
+    }
+
+    public function anno_content(){
+        $id = I('id');
         $m = M('sources');
         $where = "pk_sources>0 and type='公告' and owner='0'";
         $count = $m->where($where)->count();
@@ -94,6 +109,9 @@ class IndexController extends Controller {
         $list = $m->field(true)->where($where)->order('pk_sources')->limit($p->firstRow, $p->listRows)->select();
         $this->assign('dataList', $list); // 赋值数据集
         $this->assign('page', $p->show()); // 赋值分页输出
+        $this->content = $m ->where("pk_sources = '$id'")->find();
+
         $this->display();
     }
+
 }

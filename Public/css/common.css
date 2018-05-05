@@ -74,3 +74,13 @@ span.current,a.num{
 a.prev,a.next{
     width:45px;
 }
+
+.dataList{
+    margin-top:50px;
+}
+.dataList li{
+    /*float:left;*/
+}
+.dataList li:hover{
+    background: #9aae51;
+}

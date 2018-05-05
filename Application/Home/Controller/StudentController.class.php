@@ -12,6 +12,11 @@ class StudentController extends Controller {
 
 
     // myself code
+
+    public function student_password(){
+        $this->userinfo = getStuInfo();
+        $this->display();
+    }
     public function post_info(){
     	if(!IS_POST) $this->error('页面不存在');
         $data=array(

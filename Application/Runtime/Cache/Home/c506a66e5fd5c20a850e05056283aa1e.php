@@ -70,7 +70,7 @@
 
                                             <input type="file" name="photo" />
 
-                                            <input type="submit" value="导入数据">
+                                            <input type="submit" value="导入数据" style="margin:10px 0 0 100px">
                                     </div>
                                 </div>
                                 

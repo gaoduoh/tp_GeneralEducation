@@ -39,12 +39,12 @@
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                    <form class="search-form" name="search" method="post">
+                    <form class="search-form" name="search" method="post" action="/tp_GeneralEducation/index.php/Home/Teacher/teacher_course/">
                         <label>学生课程查询：</label>
                         <select name="course">
-                            <option value="高级语言程序设计">高级语言程序设计</option>
-                            <option value="互联网+">互联网+</option>
-                            <option value="信息技术应用">信息技术应用</option>
+                            <option value="高级语言程序设计" <?php if(($selected) == "高级语言程序设计"): ?>selected<?php endif; ?>>高级语言程序设计</option>
+                            <option value="互联网+" <?php if(($selected) == "互联网+"): ?>selected<?php endif; ?>>互联网+</option>
+                            <option value="信息技术应用" <?php if(($selected) == "信息技术应用"): ?>selected<?php endif; ?>>信息技术应用</option>
                         </select>
                         <input type="submit" name="submit" class="search" value="查询" />
                     </form>

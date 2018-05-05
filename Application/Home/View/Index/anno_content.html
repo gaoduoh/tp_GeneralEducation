@@ -34,20 +34,18 @@ include('conn.php');
         <li><a href="__URL__/login/" target="_blank">登录</a></li>
     </ul>
 
-    <div class="content">
+    <div class="content clearfix">
+        <a href = "__URL__/anno/">返回公告列表</a>
         <div class="col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
-            <h3>公告</h3>
-            <ul class="dataList clearfix">
-                <foreach name='dataList' item='list' >
-                    <li title="{$list.title}"><a href='{:U("anno_content", array("id" => $list["pk_sources"]))}'>{$list.title}</a><span style="float:right">{$list.ts}</span></li>
-                </foreach>
-            </ul>
-            <div class="pages">{$page}</div>
+            <h3>{$content.title}</h3>
+            <div>
+                {$content.des}
+            </div>
         </div>
 
-        </div>
     </div>
-    <!--<div class="footer">页脚内容</div>-->
+</div>
+<!--<div class="footer">页脚内容</div>-->
 </div>
 
 

@@ -25,33 +25,33 @@
         <img class="logo" src="/tp_GeneralEducation/Public/images/logo.png" />
         <p class="title">计算机通识教育<br />自主学习平台</p>
     </div>
-    <ul class="nav nav-pills choose">
-        <li class="active homepage"><a href="#">首页</a></li>
-        <li class="introduce"><a href="#">学校概况</a></li>
-        <li class="annotion"><a href="#">公告</a></li>
-        <li class="download"><a href="#">资料下载</a></li>
+    <ul class="nav nav-pills choose" style="background-color: #dff0d8">
+        <li class="active homepage"><a href="/tp_GeneralEducation/index.php/Home/Index/index/" target="_self">首页</a></li>
+        <li class="annotion"><a href="/tp_GeneralEducation/index.php/Home/Index/anno/" target="_self">公告</a></li>
+        <li class="download"><a href="/tp_GeneralEducation/index.php/Home/Index/download/" target="_self">资料下载</a></li>
         <li><a href="/tp_GeneralEducation/index.php/Home/Index/login/" target="_blank">登录</a></li>
     </ul>
 
     <div class="content">
-        <div class="intro col-xs-6 col-md-6 col-lg-6">
-            <h4>学院概况</h4>
-            <div>
+        <div class="intro col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+            <p class="intro-title"><?php echo ($introRs["title"]); ?></p>
+            <div class="intro-content">
                 <?php echo ($introRs["des"]); ?>
             </div>
         </div>
-        <div class="anno col-xs-6 col-md-6 col-lg-6">
-            <h4>公告</h4>
-            <div>
-                <?php echo ($annoRs["des"]); ?>
+        <div class="anno col-xs-4 col-md-4 col-lg-4">
+            <h5 style="color:#a94442;font-weight:bold" class="anno-title">公告</h5>
+            <div class="anno-content">
+                <li title="<?php echo ($annoRs["title"]); ?>"><a href='<?php echo U("anno_content", array("id" => $annoRs["pk_sources"]));?>'><?php echo ($annoRs["title"]); ?></a><span style="float:right"><?php echo ($annoRs["ts"]); ?></span></li>
             </div>
+            <a href="/tp_GeneralEducation/index.php/Home/Index/anno/" style="float:right;margin-top:10px;">查看详情</a>
         </div>
-        <div class="data col-xs-6 col-md-6 col-lg-6">
-            <h4>公共资源下载</h4>
+        <div class="data col-xs-8 col-md-8 col-lg-8">
+            <h5  style="color:#a94442;font-weight:bold" class="data-title">资料下载</h5>
             <ul class="dataList clearfix">
-                <?php if(is_array($dataList)): foreach($dataList as $key=>$list): ?><li><a href='<?php echo U("down_file", array("savename" => $list["savename"]));?>'><?php echo ($list["title"]); ?></a></li><?php endforeach; endif; ?>
+                <?php if(is_array($dataList)): foreach($dataList as $key=>$list): ?><li title="<?php echo ($list["title"]); ?>"><a href='<?php echo U("down_file", array("savename" => $list["savename"]));?>'><?php echo ($list["title"]); ?></a><span style="float:right"><?php echo ($list["ts"]); ?></span></li><?php endforeach; endif; ?>
             </ul>
-            <div class="datapages"><?php echo ($dataPage); ?></div>
+            <a href="/tp_GeneralEducation/index.php/Home/Index/download/" style="float:right;margin-top:10px">更多资料</a>
         </div>
     </div>
     <!--<div class="footer">页脚内容</div>-->
@@ -63,26 +63,7 @@
             $(".choose li").removeClass("active");
             $(this).addClass("active");
         });
-        $(".homepage").click(function(){
-            $(".intro").css('display','block');
-            $(".anno").css('display','block');
-            $(".data").css('display','block');
-        });
-        $(".introduce").click(function(){
-            $(".intro").css('display','block');
-            $(".anno").css('display','none');
-            $(".data").css('display','none');
-        });
-        $(".annotion").click(function(){
-            $(".intro").css('display','none');
-            $(".anno").css('display','block');
-            $(".data").css('display','none');
-        });
-        $(".download").click(function(){
-            $(".intro").css('display','none');
-            $(".anno").css('display','none');
-            $(".data").css('display','block');
-        });
+
     });
 </script>
 

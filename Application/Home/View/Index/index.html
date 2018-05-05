@@ -28,7 +28,7 @@ include('conn.php');
         <p class="title">计算机通识教育<br />自主学习平台</p>
     </div>
     <ul class="nav nav-pills choose" style="background-color: #dff0d8">
-        <li class="active homepage"><a href="__URL__index/" target="_self">首页</a></li>
+        <li class="active homepage"><a href="__URL__/index/" target="_self">首页</a></li>
         <li class="annotion"><a href="__URL__/anno/" target="_self">公告</a></li>
         <li class="download"><a href="__URL__/download/" target="_self">资料下载</a></li>
         <li><a href="__URL__/login/" target="_blank">登录</a></li>
@@ -41,19 +41,21 @@ include('conn.php');
                 {$introRs.des}
             </div>
         </div>
-        <div class="anno col-xs-6 col-md-6 col-lg-6">
-            <p class="anno-title">公告</p>
+        <div class="anno col-xs-4 col-md-4 col-lg-4">
+            <h5 style="color:#a94442;font-weight:bold" class="anno-title">公告</h5>
             <div class="anno-content">
-                {$annoRs.title}
+                <li title="{$annoRs.title}"><a href='{:U("anno_content", array("id" => $annoRs["pk_sources"]))}'>{$annoRs.title}</a><span style="float:right">{$annoRs.ts}</span></li>
             </div>
+            <a href="__URL__/anno/" style="float:right;margin-top:10px;">查看详情</a>
         </div>
-        <div class="data col-xs-6 col-md-6 col-lg-6">
-            <p class="data-title">资料下载</p>
+        <div class="data col-xs-8 col-md-8 col-lg-8">
+            <h5  style="color:#a94442;font-weight:bold" class="data-title">资料下载</h5>
             <ul class="dataList clearfix">
                 <foreach name='dataList' item='list' >
-                    <li title="{$list.title}"><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a><span>{$list.ts}</span></li>
+                    <li title="{$list.title}"><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a><span style="float:right">{$list.ts}</span></li>
                 </foreach>
             </ul>
+            <a href="__URL__/download/" style="float:right;margin-top:10px">更多资料</a>
         </div>
     </div>
     <!--<div class="footer">页脚内容</div>-->

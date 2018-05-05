@@ -34,30 +34,31 @@
                         </ul>
                     </div>
                     <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                        
-
-
                         <div class="data-add">
                             <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加资料</button>
-                            <div class="modal fade course-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal fade data-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         <h4 class="modal-title" id="myModalLabel">添加资料</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="/tp_GeneralEducation/index.php/Home/Admin/upload_sources/" enctype="multipart/form-data" name="sources" method="POST">
+                                        <form class="data-add-form" action="/tp_GeneralEducation/index.php/Home/Admin/upload_sources/" enctype="multipart/form-data" name="data" method="POST">
                                             <div class="form-group">
                                                 <label>选择提交类型</label>
                                                 <select name="type">
-                                                    <option value="data">公共资源</option>
-                                                    <option value="intro">学校概况</option>
-                                                    <option value="anno">公告</option>
+                                                    <option value="公共资源">公共资源</option>
+                                                    <option value="平台概况">平台概况</option>
+                                                    <option value="公告">公告</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label>资源上传：</label>
                                                 <input type="file" name="load"  style="margin-top:0"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>标题：</label>
+                                                <input type="text" name="title" />
                                             </div>
                                             <div class="form-group">
                                                 <label>描述：</label>
@@ -74,16 +75,16 @@
 
                         <table class="dataTable clearfix table">
                             <tr>
-                                <td>类型</td>
-                                <td>下载</td>
+                                <td style="width:15%">类型</td>
+                                <td style="width:20%">标题</td>
                                 <td>描述</td>
-                                <td></td>
+                                <td style="width:10%"></td>
                             </tr>
                           <?php if(is_array($select)): foreach($select as $key=>$list): ?><tr>
-                                <td><?php echo ($list["type"]); ?></td>
-                                <td><a href="<?php echo ($list["url"]); ?>"><?php echo ($list["title"]); ?></a></td>
+                                <td style="width:15%"><?php echo ($list["type"]); ?></td>
+                                <td style="width:20%"><?php echo ($list["title"]); ?></td>
                                 <td><?php echo ($list["des"]); ?></td>
-                                <td><a href='<?php echo U("delete_file", array("id" => $list["pk_sources"]));?>'>删除</a></td>
+                                <td style="width:10%"><a href='<?php echo U("delete_file", array("id" => $list["pk_sources"]));?>'>删除</a></td>
                                 
                             </tr><?php endforeach; endif; ?>
                         </table>
