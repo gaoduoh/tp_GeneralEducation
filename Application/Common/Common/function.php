@@ -36,30 +36,7 @@
     }
 
     
-    //公告
-    function annopage($count, $pagesize) {
-        $annop = new Think\Page($count, $pagesize);
-        $annop->setConfig('header', '<li class="rows">共<b>%TOTAL_ROW%</b>条记录 第<b>%NOW_PAGE%</b>页/共<b>%TOTAL_PAGE%</b>页</li>');
-        $annop->setConfig('prev', '上一页');
-        $annop->setConfig('next', '下一页');
-        $annop->setConfig('last', '末页');
-        $annop->setConfig('first', '首页');
-        $annop->setConfig('theme', '%FIRST%%UP_PAGE%%LINK_PAGE%%DOWN_PAGE%%END%%HEADER%');
-        $annop->lastSuffix = false;//最后一页不显示为总页数
-        return $annop;
-    }
-    //资料下载
-    function datapage($count, $pagesize) {
-        $datap = new Think\Page($count, $pagesize);
-        $datap->setConfig('header', '<li class="rows">共<b>%TOTAL_ROW%</b>条记录 第<b>%NOW_PAGE%</b>页/共<b>%TOTAL_PAGE%</b>页</li>');
-        $datap->setConfig('prev', '上一页');
-        $datap->setConfig('next', '下一页');
-        $datap->setConfig('last', '末页');
-        $datap->setConfig('first', '首页');
-        $datap->setConfig('theme', '%FIRST%%UP_PAGE%%LINK_PAGE%%DOWN_PAGE%%END%%HEADER%');
-        $datap->lastSuffix = false;//最后一页不显示为总页数
-        return $datap;
-    }
+
 
     //下载
     function downFile($filename,$filetype){
