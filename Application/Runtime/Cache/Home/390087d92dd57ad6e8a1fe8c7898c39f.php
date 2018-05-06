@@ -24,7 +24,7 @@
             <p class="title">计算机通识教育<br />自主学习平台</p>
         </div>
         <div class="content clearfix">
-            <p class="welcome"><a href="/tp_GeneralEducation/index.php/Home/Teacher/../Index/index/">首页</a><span>&gt;&gt</span><span><span><?php echo ($username); ?></span>老师，欢迎你！</span><a href="/tp_GeneralEducation/index.php/Home/Teacher/../Index/loginout/">退出</a></p>
+            <p class="welcome"><a href="/tp_GeneralEducation/index.php/Home/Teacher/../Index/index/">首页</a><span>&gt;&gt</span><span><span><?php echo ($userinfo["name"]); ?></span>老师，欢迎你！</span><a href="/tp_GeneralEducation/index.php/Home/Teacher/../Index/loginout/">退出</a></p>
             <div class="function clearfix">
                 <div class="col-sm-3 col-xs-3 co-md-3 col-lg-3">
                     <p class="self">个人中心</p>

@@ -210,13 +210,13 @@ class AdminController extends Controller {
 
     //下载导入模板
     public function file_tea(){
-        $filename="教师导入模板.xls";
+        $filename="teacherDemo.xls";
         // echo "<script>alert($filename);</script>";
         $name = explode('.',$filename,2);
         downFile($name[0],$name[1]);
     }
     public function file_stu(){
-        $filename="学生导入模板.xlsx";
+        $filename="studentDemo.xlsx";
         // echo "<script>alert($filename);</script>";
         $name = explode('.',$filename,2);
         downFile($name[0],$name[1]);

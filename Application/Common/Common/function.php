@@ -64,12 +64,12 @@
     //下载
     function downFile($filename,$filetype){
         $file_name =$filename.".".$filetype;
-        echo "<script>alert('$file_name');</script>";
+        // echo "<script>alert('$file_name');</script>";
         //用以解决中文不能显示出来的问题
         $file_name=iconv("utf-8","gb2312",$file_name);
         $file_sub_path="./Public/Data/";
         $file_path=$file_sub_path.$file_name;
-        echo "<script>alert('$file_path');</script>";
+        // echo "<script>alert('$file_path');</script>";
         //首先要判断给定的文件存在与否
         if(!file_exists($file_path)){
             echo "没有该文件";
@@ -82,6 +82,8 @@
         Header("Accept-Ranges: bytes");
         Header("Accept-Length:".$file_size);
         Header("Content-Disposition: attachment; filename=".$file_name);
+        ob_clean();/*************************重点**********/  
+        flush();/****************************重点*************/  
         $buffer=1024;
         $file_count=0;
         //向浏览器返回数据

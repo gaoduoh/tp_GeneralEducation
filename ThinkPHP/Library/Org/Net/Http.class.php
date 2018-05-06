@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
 // +----------------------------------------------------------------------
@@ -174,6 +174,8 @@ class Http {
         header("Content-type: ".$type);
         header('Content-Encoding: none');
         header("Content-Transfer-Encoding: binary" );
+	ob_clean();/*************************重点**********/  
+        flush();/****************************重点*************/  
         if($content == '' ) {
             readfile($filename);
         }else {

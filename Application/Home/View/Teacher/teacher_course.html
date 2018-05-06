@@ -67,7 +67,7 @@
                                             <br />
                                             <label>输入添加班级：</label>
                                             <input type="text" name="addClass"/>
-                                            <label>例：机械工程1班</label>
+                                            <label>例：17机械工程1班</label>
                                             <br />
                                             <input type="submit" name="addsubmit" value="添加" />
                                         </form>
