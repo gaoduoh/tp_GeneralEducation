@@ -35,18 +35,24 @@ class IndexController extends Controller {
         $this->display();
     }
 
-    public  function login_post()
-    {
-         // session_start();
-         $user_name = I("user");
-         $pwd = I("password");
+    public  function login_post(){
+         $user_name = I("user");//获取输入的用户名
+         $pwd = I("password");//获取输入的密码
+         //判断用户名/密码是否为空
+         if($user_name==""){
+            $this->error("用户名不能为空");
+         }
+         if($pwd==""){
+            $this->error("密码不能为空");
+         }
+         //学生表、教师表、管理员表中查找
          $student = M("student");
-//        $user = M('user')->where($where)->find();
          $re_student = $student->where("number='$user_name' and password='$pwd'")->select();
          $teacher = M("teacher");
          $re_teacher = $teacher->where("number='$user_name' and password='$pwd'")->select();
          $admin = M("admin");
          $re_admin = $admin->where("name='$user_name' and password='$pwd'")->select();
+         //判断用户能否登陆
          if( count($re_student) > 0 ) {
 //             session_start();
             session("uid",$re_student[0]['pk_student']);
@@ -61,7 +67,6 @@ class IndexController extends Controller {
          }else{
             $this->error("请确认帐号和密码！");
         }
-
     }
 
     public function loginout(){

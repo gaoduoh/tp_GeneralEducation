@@ -33,7 +33,7 @@
     </ul>
 
     <div class="content">
-        <div class="intro col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+        <div class="intro col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2" style="margin-bottom:20px;border-bottom:1px solid #ddd;">
             <p class="intro-title"><?php echo ($introRs["title"]); ?></p>
             <div class="intro-content">
                 <?php echo ($introRs["des"]); ?>
@@ -44,7 +44,7 @@
             <div class="anno-content">
                 <li title="<?php echo ($annoRs["title"]); ?>"><a href='<?php echo U("anno_content", array("id" => $annoRs["pk_sources"]));?>'><?php echo ($annoRs["title"]); ?></a><span style="float:right"><?php echo ($annoRs["ts"]); ?></span></li>
             </div>
-            <a href="/tp_GeneralEducation/index.php/Home/Index/anno/" style="float:right;margin-top:10px;">查看详情</a>
+            <a href="/tp_GeneralEducation/index.php/Home/Index/anno/" style="float:right;margin-top:10px;">查看更多</a>
         </div>
         <div class="data col-xs-8 col-md-8 col-lg-8">
             <h5  style="color:#a94442;font-weight:bold" class="data-title">资料下载</h5>

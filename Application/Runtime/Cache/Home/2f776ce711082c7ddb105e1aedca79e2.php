@@ -48,12 +48,12 @@
                     </div>
                     <div class="fixInformation">修改信息</div>
                     <form method = "POST" class="changeInformation" style="display:none" action="/tp_GeneralEducation/index.php/Home/Teacher/post_info/">
-                        <div><label>教工号：</label><label><?php echo ($userinfo["number"]); ?></label></div>
-                        <div><label>姓名：</label><label><?php echo ($userinfo["name"]); ?></label></div>
-                        <div><label>性别：</label><input type="radio" name="sex" value="男" checked>男<input type="radio" name="sex" value="女">女</div>
-                        <div><label>邮箱：</label><input name="email" value="<?php echo ($userinfo["email"]); ?>"/></div>
-                        <div><label>联系方式：</label><input name="phone" value = "<?php echo ($userinfo["phone"]); ?>"/></div>
-                        <button type="submit" name="submit">确认修改</button>
+                        <div class="row"><label class="col-lg-4">教工号：</label><label><?php echo ($userinfo["number"]); ?></label></div>
+                        <div class="row"><label class="col-lg-4">姓名：</label><label><?php echo ($userinfo["name"]); ?></label></div>
+                        <div class="row"><label class="col-lg-4">性别：</label><input type="radio" name="sex" value="男" checked>男<input type="radio" name="sex" value="女">女</div>
+                        <div class="row"><label class="col-lg-4">邮箱：</label><input name="email" value="<?php echo ($userinfo["email"]); ?>"/></div>
+                        <div class="row"><label class="col-lg-4">联系方式：</label><input name="phone" value = "<?php echo ($userinfo["phone"]); ?>"/></div>
+                        <button type="submit" name="submit" style="margin:15px auto 0;">确认修改</button>
                     </form>
                 </div>
             </div>

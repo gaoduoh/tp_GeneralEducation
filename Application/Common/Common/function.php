@@ -59,8 +59,8 @@
         Header("Accept-Ranges: bytes");
         Header("Accept-Length:".$file_size);
         Header("Content-Disposition: attachment; filename=".$file_name);
-        ob_clean();/*************************重点**********/  
-        flush();/****************************重点*************/  
+        ob_clean();//清除缓存否则下载的文件内容为乱码 
+        flush(); 
         $buffer=1024;
         $file_count=0;
         //向浏览器返回数据

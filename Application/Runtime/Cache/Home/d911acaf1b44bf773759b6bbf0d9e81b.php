@@ -32,6 +32,7 @@
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_password/">修改密码</a></li>
                     <li role="presentation" class="active"><a href="/tp_GeneralEducation/index.php/Home/Student/student_homework/">作业管理</a></li>
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_download/">资料下载</a></li>
+                    <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_sources/">个人资源</a></li>
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_discuss/">问题讨论</a></li>
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_test/">自测系统</a></li>
                     </ul>

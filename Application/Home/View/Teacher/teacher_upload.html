@@ -40,37 +40,41 @@
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
                     <div class="data-add">
-                            <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加资料</button>
-                            <div class="modal fade course-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">添加资料</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="__URL__/upload" enctype="multipart/form-data" method="post" >
-                                            <select name="addData">
-                                                <option value="1">高级语言程序设计</option>
-                                                <option value="2">互联网+</option>
-                                                <option value="3">信息技术应用</option>
-                                            </select>
-                                            <br />
-                                            <input type="file" name="photo" style="margin:20px 0"/>
-                                            <input type="submit" value="提交" >
-                                        </form>
-                                    </div>
+                        <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"  style="float:right;margin-bottom:10px;">添加资料</button>
+                        <div class="modal fade course-add-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">添加资料</h4>
                                 </div>
-                                
+                                <div class="modal-body">
+                                    <form action="__URL__/upload" enctype="multipart/form-data" method="post" >
+                                        <select name="addData">
+                                            <option value="高级语言程序设计">高级语言程序设计</option>
+                                            <option value="互联网+">互联网+</option>
+                                            <option value="信息技术应用">信息技术应用</option>
+                                        </select>
+                                        <br />
+                                        <input type="file" name="photo" style="margin:20px 0"/>
+                                        <input type="submit" value="提交" >
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-
-                        <ul class="dataList clearfix">
-                          <foreach name='select' item='list' >
-                            <li style="width:90%;margin:5px 0"><a href="{$list.url}">{$list.title}</a><a style="float:right" href='{:U("delete_file", array("id" => $list["pk_sources"]))}'>删除</a></li>
                             
-                          </foreach>
-                        </ul>
-                        <div class="pages">{$page}</div>
+                        </div>
+                    </div>
+
+                    <form method="POST" action="__URL__/searchData">
+                        <input type="text" name="key"/>
+                        <button type="submit" name="searchBtn"><i class="fa fa-search"></i>搜索</button>
+                    </form>
+                    <ul class="dataList clearfix">
+                      <foreach name='select' item='list' >
+                        <li style="width:90%;margin:5px 0">{$list.title}<a style="float:right" href='{:U("delete_file", array("id" => $list["pk_sources"]))}'>删除</a></li>
+                        
+                      </foreach>
+                    </ul>
+                    <div class="pages">{$page}</div>
                 </div>
             </div>
         </div>

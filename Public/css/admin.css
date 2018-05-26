@@ -63,13 +63,3 @@ a.prev,a.next{
 	/*float:right;*/
 /*}*/
 
-.intro-title{
-	font-size:26px;
-	font-weight:bold;
-	line-height:30px;
-}
-.intro-content{
-	font-size:18px;
-	line-height:40px;
-	text-indent:2em;
-}

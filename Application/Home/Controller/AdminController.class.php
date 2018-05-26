@@ -103,7 +103,7 @@ class AdminController extends Controller {
 
 		for ($i = 2; $i <= $highestRow; $i++) {
 
-		//看这里看这里,前面小写的a是表中的字段名，后面的大写A是excel中位置
+		//前面小写的a是表中的字段名，后面的大写A是excel中位置
 
 		$data['number'] =$objPHPExcel->getActiveSheet()->getCell("A" . $i)->getValue();
 
@@ -111,7 +111,7 @@ class AdminController extends Controller {
 
 		$data['password'] =$objPHPExcel->getActiveSheet()->getCell("C" .$i)->getValue();
 
-		//看这里看这里,这个位置写数据库中的表名
+		//这个位置写数据库中的表名
 
 		M('teacher')->add($data);
 
@@ -306,7 +306,7 @@ class AdminController extends Controller {
     public function delete_file(){
         $id=I("id");
         if(M('sources')->delete($id)){
-            $this->success('删除成功',U('teacher_upload'));
+            $this->success('删除成功',U('admin_data'));
         }else {
             $this->error('删除失败,请重试。。。');
         }

@@ -35,7 +35,7 @@ include('conn.php');
     </ul>
 
     <div class="content">
-        <div class="intro col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+        <div class="intro col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2" style="margin-bottom:20px;border-bottom:1px solid #ddd;">
             <p class="intro-title">{$introRs.title}</p>
             <div class="intro-content">
                 {$introRs.des}
@@ -46,7 +46,7 @@ include('conn.php');
             <div class="anno-content">
                 <li title="{$annoRs.title}"><a href='{:U("anno_content", array("id" => $annoRs["pk_sources"]))}'>{$annoRs.title}</a><span style="float:right">{$annoRs.ts}</span></li>
             </div>
-            <a href="__URL__/anno/" style="float:right;margin-top:10px;">查看详情</a>
+            <a href="__URL__/anno/" style="float:right;margin-top:10px;">查看更多</a>
         </div>
         <div class="data col-xs-8 col-md-8 col-lg-8">
             <h5  style="color:#a94442;font-weight:bold" class="data-title">资料下载</h5>

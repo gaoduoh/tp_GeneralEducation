@@ -32,9 +32,9 @@
                         <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/index/">个人信息</a></li>
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_password/">修改密码</a></li>
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_homework/">作业管理</a></li>
-                    <li role="presentation" class="active"><a href="/tp_GeneralEducation/index.php/Home/Student/student
+                    <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student
                         _download/">资料下载</a></li>
-                        <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_sources/">个人资源</a></li>
+                        <li role="presentation" class="active"><a href="/tp_GeneralEducation/index.php/Home/Student/student_sources/">个人资源</a></li>
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_discuss/">问题讨论</a></li>
                     <li role="presentation"><a href="/tp_GeneralEducation/index.php/Home/Student/student_test/">自测系统</a></li>
                     </ul>
@@ -43,11 +43,11 @@
                     <table class="table">
                         <tr>
                             <td>标题</td>
-                            <td>收藏</td>
+                            <td>取消收藏</td>
                         </tr>
                         <?php if(is_array($select)): foreach($select as $key=>$list): ?><tr>
                                 <td><a href='<?php echo U("down_file", array("savename" => $list["savename"]));?>'><?php echo ($list["title"]); ?></a></td>
-                                <td><a href='<?php echo U("college", array("savename" => $list["savename"]));?>'><i class="fa fa-heart-o"></i></a></td>
+                                <td><a href='<?php echo U("del_college", array("id" => $list["pk_sources"]));?>'><i class="fa fa-heart"></i></a></td>
                             </tr><?php endforeach; endif; ?>
 
                     </table>

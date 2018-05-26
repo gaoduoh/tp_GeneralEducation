@@ -60,11 +60,11 @@ class StudentController extends Controller {
         $id = getStuInfo()['pk_student'];
         $count =M('sources as a')->join('ge_student as b')->join('ge_teaching as c')
                 ->field("a.url url,a.savename savename,a.title title")
-                ->where("b.class=c.class and c.teacher=a.owner and b.pk_student = '$id' and c.course = a.course")->count();
+                ->where("b.class=c.class and c.pk_teacher=a.owner and b.pk_student = '$id' and c.pk_course = a.course")->count();
                 // echo "<script>alert($id);</script>";
         $p = getpage($count,10);
         $list = M('sources as a')->join('ge_student as b')->join('ge_teaching as c')
-               ->field("a.url url,a.savename savename,a.title title")->where("b.class=c.class and c.teacher=a.owner and b.pk_student = '$id' and c.course = a.course")->limit($p->firstRow, $p->listRows)->select();
+               ->field("a.url url,a.savename savename,a.title title")->where("b.class=c.class and c.pk_teacher=a.owner and b.pk_student = '$id' and c.pk_course = a.course")->limit($p->firstRow, $p->listRows)->select();
         $this->assign('select', $list); // 赋值数据集
         $this->assign('page', $p->show()); // 赋值分页输出
         $this->display();
@@ -74,6 +74,49 @@ class StudentController extends Controller {
         $filename = trim($_GET['savename']);
         $name = explode('.',$filename,2);
         downFile($name[0],$name[1]);
+    }
+
+    public function college(){
+        $id = getStuInfo()['pk_student'];
+        $savename = I("savename");
+        $sources = M("sources") ->where("savename = '$savename'") ->find();
+        $title = $sources["title"];
+        $url = $sources["url"];
+        $data=array(
+            'title'=>$title,
+            'savename'=>$savename,
+            'owner'=>$id,
+            'url'=>$url,   
+            'type'=>'data', 
+        );
+
+        if(M('sources')->add($data)){
+            $this->success('收藏成功',U('student_download'));
+        }else {
+            $this->error('收藏失败');
+        }
+
+    }
+
+    public function student_sources(){
+        $this->username = getStuInfo()['name'];
+        $id = getStuInfo()['pk_student'];
+        $count =M('sources')->where("owner = '$id'")->count();
+                // echo "<script>alert($id);</script>";
+        $p = getpage($count,10);
+        $list = M('sources')->where("owner = '$id'")->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('select', $list); // 赋值数据集
+        $this->assign('page', $p->show()); // 赋值分页输出
+        $this->display();
+    }
+
+    public function del_college(){
+        $id=I("id");
+        if(M('sources')->delete($id)){
+            $this->success('取消收藏成功',U('student_sources'));
+        }else {
+            $this->error('取消收藏失败,请重试。。。');
+        }
     }
 
 }

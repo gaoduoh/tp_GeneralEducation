@@ -61,10 +61,10 @@ class TeacherController extends Controller {
             $this->username = getTeaInfo()['name'];
             $teacher_id = getTeaInfo()['pk_teacher'];
             $count = M('teaching as a')->join('ge_student as b')->join('ge_course as c')
-                    ->field("b.number number,b.name name,b.class class,c.name course")->where("a.course = c.pk_course and a.teacher = '$teacher_id' and a.class=b.class")->count();
+                    ->field("b.number number,b.name name,b.class class,c.name course")->where("a.pk_course = c.pk_course and a.pk_teacher = '$teacher_id' and a.class=b.class")->count();
             $p = getpage($count,10);
             $list = M('teaching as a')->join('ge_student as b')->join('ge_course as c')
-                    ->field("b.number number,b.name name,b.class class,c.name course")->where("a.course = c.pk_course and a.teacher = '$teacher_id' and a.class=b.class")->limit($p->firstRow, $p->listRows)->select();
+                    ->field("b.number number,b.name name,b.class class,c.name course")->where("a.pk_course = c.pk_course and a.pk_teacher = '$teacher_id' and a.class=b.class")->limit($p->firstRow, $p->listRows)->select();
             $this->assign('select', $list); // 赋值数据集
             $this->assign('page', $p->show()); // 赋值分页输出
             $this->display();
@@ -75,10 +75,10 @@ class TeacherController extends Controller {
             $course_id = $course_id[0]['pk_course'];
             $teacher_id = getTeaInfo()['pk_teacher'];
             $count = M('teaching as a')->join('ge_student as b')->join('ge_course as c')
-                    ->where("b.number number,b.name name,b.class class,c.name course")->where("a.course = '$course_id' and c.pk_course = '$course_id' and a.teacher = '$teacher_id' and a.class=b.class")->count();
+                    ->where("b.number number,b.name name,b.class class,c.name course")->where("a.pk_course = '$course_id' and c.pk_course = '$course_id' and a.pk_teacher = '$teacher_id' and a.class=b.class")->count();
             $p = getpage($count,10);
             $list = M('teaching as a')->join('ge_student as b')->join('ge_course as c')
-                    ->field("b.number number,b.name name,b.class class,c.name course")->where("a.course = '$course_id' and c.pk_course = '$course_id' and a.teacher = '$teacher_id' and a.class=b.class")->limit($p->firstRow, $p->listRows)->select();
+                    ->field("b.number number,b.name name,b.class class,c.name course")->where("a.pk_course = '$course_id' and c.pk_course = '$course_id' and a.pk_teacher = '$teacher_id' and a.class=b.class")->limit($p->firstRow, $p->listRows)->select();
             $this->assign('select', $list); // 赋值数据集
             $this->assign('page', $p->show()); // 赋值分页输出
             $this->assign('selected',$course);
@@ -98,8 +98,8 @@ class TeacherController extends Controller {
         $class = M('student')->where("class='$className'")->select();
         if(count($class)>0){
             $data=array(
-            'teacher'=>$teacher_id,
-            'course'=>$course_id,
+            'pk_teacher'=>$teacher_id,
+            'pk_course'=>$course_id,
             'class'=>I('addClass'),    
             );
             //p($_POST);die;
@@ -129,13 +129,16 @@ class TeacherController extends Controller {
     }
 
     public function upload(){
-        $teacher_id = getTeaInfo()['pk_teacher'];
+         $teacher_id = getTeaInfo()['pk_teacher'];
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     31457280000 ;// 设置附件上传大小
         $upload->exts      =     array('doc', 'docx', 'xsl', 'xslx','ppt','pptx');// 设置附件上传类型
         $upload->rootPath  =     './Public/'; // 设置附件上传根目录
         $upload->savePath  =     'Data/'; // 设置附件上传（子）目录
         $upload->autoSub = false;
+        $course = I('addData');
+        $course = M("course")->where("name = '$course'")->select();
+        $course_id = $course[0][pk_course];
         // 上传文件 
         $info   =   $upload->upload();
         if(!$info) {// 上传错误提示错误信息
@@ -150,7 +153,7 @@ class TeacherController extends Controller {
                     'owner'=>$teacher_id,
                     'url'=>$file['savepath'],   
                     'type'=>'data', 
-                    'course'=>I('addData'),
+                    'course'=>$course_id,
                 );
         
                 if(M('sources')->add($data)){
@@ -169,6 +172,21 @@ class TeacherController extends Controller {
         }else {
             $this->error('删除失败,请重试。。。');
         }
+    }
+
+    public function searchData(){
+        $_POST['key'] = "%".$_POST['key']."%";
+        $where['title'] = array('LIKE',$_POST['key']);
+        $id = getTeaInfo()['pk_teacher'];
+        $where['owner'] = $id;
+        
+        $list = M("sources")->where($where)->select();
+        $count =M('sources')
+                ->where($where)->count();
+        $p = getpage($count,10);
+         $this->assign('select', $list); // 赋值数据集
+        $this->assign('page', $p->show()); // 赋值分页输出
+        $this->display('teacher/teacher_upload');
     }
 
 }

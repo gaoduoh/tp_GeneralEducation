@@ -34,17 +34,26 @@
                     <li role="presentation"><a href="__URL__/student_homework/">作业管理</a></li>
                     <li role="presentation" class="active"><a href="__URL__/student
                         _download/">资料下载</a></li>
+                        <li role="presentation"><a href="__URL__/student_sources/">个人资源</a></li>
                     <li role="presentation"><a href="__URL__/student_discuss/">问题讨论</a></li>
                     <li role="presentation"><a href="__URL__/student_test/">自测系统</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-9 col-xs-9 co-md-9 col-lg-9">
-                   <ul class="dataList clearfix">
-                      <foreach name='select' item='list' >
-                        <li><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a></li>
+                    <table class="table">
+                        <tr>
+                            <td>标题</td>
+                            <td>收藏</td>
+                        </tr>
+                        <foreach name='select' item='list' >
+                            <tr>
+                                <td><a href='{:U("down_file", array("savename" => $list["savename"]))}'>{$list.title}</a></td>
+                                <td><a href='{:U("college", array("savename" => $list["savename"]))}'><i class="fa fa-heart-o"></i></a></td>
+                            </tr>
                         
                       </foreach>
-                    </ul>
+
+                    </table>
                     <div class="pages">{$page}</div>
                 </div>
             </div>
